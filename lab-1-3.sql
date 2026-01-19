@@ -8,4 +8,7 @@
 -- | 2003 | Detroit Tigers       | 43   | 119    |
 -- +------+----------------------+------+--------+
 
-SELECT losses FROM three teams;
+SELECT year, name, losses 
+FROM teams
+ORDER BY losses DESC
+LIMIT 3;
